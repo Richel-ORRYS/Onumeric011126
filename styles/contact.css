@@ -1,0 +1,72 @@
+
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: var(--border-radius);
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    form textarea {
+      resize: vertical;
+      height: 100px;
+
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .submit-btn {
+      background: var(--gradient-blue);
+      color: white;
+      padding:10px 30px 40px 10px;
+      border: none;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      height: 30px;
+
+    }
+
+    .submit-btn:hover {
+      box-shadow: var(--shadow-hover);
+      transform: scale(1.02);
+    }
+
+    iframe {
+      width: 100%;
+      border-radius: var(--border-radius);
+      border: none;
+      height: 300px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-container {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      margin-top: 2rem;
+    }
+
+    .success-message {
+      background: #d1e7dd;
+      color: #0f5132;
+      border: 1px solid #badbcc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: var(--border-radius);
+      display: none;
+    }
+ 
+    .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-hover);
+    position: relative;
+    z-index: 1;
+}

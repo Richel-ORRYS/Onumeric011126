@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Formations IT avec ORRYS NUMERIC : développement web, mobile, cybersécurité, réseaux télécoms et outils professionnels.">
+  <meta name="keywords" content="formations IT, développement web, applications, mobile, réseaux télécoms, Brazzaville, Congo, ORRYS NUMERIC">
+  <meta name="author" content="ORRYS NUMERIC">
+  <meta name="robots" content="index, follow">
+  <title>Formations | ORRYS NUMERIC</title>
+
+  <!-- Open Graph pour Facebook, LinkedIn, WhatsApp -->
+  <meta property="og:title" content="Formations IT à Brazzaville | ORRYS NUMERIC">
+  <meta property="og:description" content="Rejoignez nos formations en développement web, mobile, cybersécurité et réseaux télécoms et master classes à Brazzaville.">
+  <meta property="og:image" content="https://orrysnumeric.cg/imgs/formation.jpg">
+  <meta property="og:url" content="https://orrysnumeric.cg/navigation/formations">
+  <meta property="og:type" content="website">
+
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/formation.css">
+  <link rel="icon" href="../imgs/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com" defer></script> <!--le cdn pour le loader a point de rebondissement-->
+  <script src="../script.js" defer></script>
+  <script src="../scripts/formations.js" defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  
+
+ 
+</head>
+<body>
+    <!-- Loader -->
+   <div class="loader" id="loader">
+        <!-- <div class="spinner"></div> -->
+
+        <!-- <div class="loader-text"> -->
+            <div class="text-center">
+                <!-- Zone du logo -->
+                <div id="logoZone">
+                    <div id="logoPlaceholder" class="w-24 h-24 mx-auto"><img src="../imgs/logob.png" alt="" width="150px"></div>
+                </div>
+
+                <!-- Points rebondissants -->
+                <div class="flex items-center justify-center space-x-2" >
+                    <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                    <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                    <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu Toggle Button -->
+    <button type="button" class="nav-toggler" id="navToggle" aria-label="Toggle navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-logo"><img src="../imgs/logob.png" width="60%" alt=""></div>
+
+            <div class="sidebar-service">
+                 
+                <a href="../index.html"><i class="fas fa-home"></i> ACCUEIL</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/about.html"><i class="fas fa-user"></i> À PROPOS</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/services.html"><i class="fas fa-gear"></i> SERVICES</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/formations.html" class="actived"><i class="fas fa-graduation-cap"></i> FORMATIONS</a>
+             </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/contacts.html"><i class="fas fa-envelope"></i> CONTACTS</a>
+            </div>
+
+            <p style="margin-top: 2rem; text-align: center; opacity: 0.7;">&copy; ORRYS NUMERIC 2025</p>
+        </div>
+    </aside>
+  <!-- Header -->
+  <header class="header">
+        <img src="../imgs/logob.png" alt="logo Onumeric" class="logo">
+        <img src="../imgs/logo.png" alt="logo Onumeric" class="logo-mobile">
+
+        <div class="header-content">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> CASE C4-23, OCH. BZV</p>
+                <p><i class="fas fa-phone"></i> +242 06-631-83-33</p>
+            </div>
+        </div>
+    </header>
+
+
+  <!-- Nav -->
+    <nav class="main-nav">
+    <ul>
+      <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="about.html">À PROPOS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="formations.html" class="actived">FORMATIONS</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text slide-in-left">
+          <h1>Nos Formations</h1>
+          <p class="subtitle">Montez en compétence avec des programmes certifiants et pratiques.</p>
+        </div>
+        <div class="hero-image slide-in-right">
+          <img src="../imgs/12.jpg" alt="Formations ORRYS" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Choisissez votre domaine</h2>
+
+        <!-- Filtres -->
+        <div class="filters">
+          <button class="actived" data-category="all">Tous</button>
+          <button data-category="web">Web</button>
+          <button data-category="mobile">Mobile</button>
+          <button data-category="reseaux">Réseaux</button>
+          <button data-category="securite">Cybersécurité</button>
+           <button data-category="bureautique">Bureautique</button>
+            <button data-category="masterclass">MasterClass</button>
+        </div>
+
+        <!-- Grille des formations -->
+        <div class="formations-grid" id="formations">
+          <div class="formation-card fade-in" data-category="web">
+            <img src="../imgs/03.jpeg" alt="Formation Web" />
+            <span class="badge">Intermédiaire</span>
+            <h3>Développement Web Moderne</h3>
+            <p> Apprenez à Créer des sites performants avec HTML, CSS, JS, React, APIs REST.</p>
+            <button>S'inscrire</button>
+          </div>
+
+          <div class="formation-card fade-in" data-category="mobile">
+            <img src="../imgs/devMobile.jpg" alt="Formation Mobile Flutter" />
+            <span class="badge">Avancé</span>
+            <h3>Applications Mobiles avec Flutter</h3>
+            <p>Apps Android/iOS performantes avec Flutter & Dart.</p>
+            <button>S'inscrire</button>
+          </div>
+
+          <div class="formation-card fade-in" data-category="reseaux">
+            <img src="../imgs/cisco.jpg" alt="Formation Réseaux" />
+            <span class="badge">Débutant</span>
+            <h3>Introduction aux Réseaux</h3>
+            <p> Les fondamentaux de TCP/IP, routeurs, WiFi sécurisé, VLAN...</p>
+            <button>S'inscrire</button>
+          </div>
+
+          <div class="formation-card fade-in" data-category="securite">
+            <img src="../imgs/06.jpg" alt="Formation Cybersécurité" />
+            <span class="badge">Avancé</span>
+            <h3>Cybersécurité Offensive & Défensive</h3>
+            <p>Pentest, forensic, audit, défense active.</p>
+            <button>S'inscrire</button>
+          </div>
+
+          <div class="formation-card fade-in" data-category="web">
+            <img src="../imgs/07.jpg" alt="Formation HTML CSS" />
+            <span class="badge">Débutant</span>
+            <h3>HTML & CSS de A à Z</h3>
+            <p>Les bases du web pour créer des sites modernes.</p>
+            <button>S'inscrire</button>
+          </div>
+          <div class="formation-card fade-in" data-category="bureautique">
+            <img src="../imgs/ordinateur.jpg" alt="Formation HTML CSS" />
+            <span class="badge">Débutant</span>
+            <h3>Bureautique</h3>
+            <p>Découvrez l'univers des suites offices modernes.</p>
+            <button>S'inscrire</button>
+          </div>
+          <div class="formation-card fade-in" data-category="masterclass">
+            <img src="../imgs/materClasse.webp" alt="Formation HTML CSS" />
+            <span class="badge">Débutant</span>
+            <h3>MasterClass</h3>
+            <p>Les aquis pour transformer une idée en business réel.</p>
+            <button>S'inscrire</button>
+          </div>
+
+          <div class="formation-card fade-in" data-category="web">
+            <img src="../imgs/cloud.webp" alt="Formation CLOUD" />
+            <span class="badge">Débutant</span>
+            <h3>Cloud Computing</h3>
+            <p>Les fondamentaux du cloud et services.</p>
+            <button>S'inscrire</button>
+          </div>
+
+          
+          <div class="formation-card fade-in" data-category="reseaux">
+            <img src="../imgs/maint.avif" alt="Formation HTML CSS" />
+            <span class="badge">Débutant</span>
+            <h3>Maintenance informatique</h3>
+            <p>La maintenances pour les nuls.</p>
+            <button>S'inscrire</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modale de pré-inscription -->
+<div class="modal" id="inscriptionModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Pré-inscription à une formation</h2>
+    <form id="preinscriptionForm" action="/formations" method="POST">
+      <div class="form-group">
+        <label for="nom">Nom & prénom :</label>
+        <input type="text" id="nom" name="name" required />
+      </div>
+
+       <div class="form-group">
+        <label for="tel">Telephone :</label>
+        <input type="tel" id="tel" name="tel" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Adresse email :</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="formation">Formation choisie :</label>
+        <input type="text" id="formationChoisie" name="formation" readonly />
+      </div>
+      <button type="submit" class="submit-btn">Envoyer</button>
+    <div id="successMessage" class="success-message">
+              <i class="fas fa-check-circle"></i> Votre message a bien été envoyé !
+            </div>
+    </form>
+  </div>
+</div>
+
+    </section>
+
+
+  </main>
+
+  <!-- Social -->
+  <div class="social-media">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/richel-oko-yoas-b9279319b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/+242069215323" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+       <p>Ce site, tous droits réservés, est développé et administré par notre équipe DEV.</p>
+        <p>&copy; 2025 ORRYS NUMERIC | Excellence Technologique</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+    
+</body>
+</html>

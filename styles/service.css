@@ -1,0 +1,22 @@
+      .service-card img{
+        width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      margin-bottom: 1rem;
+      padding: 0;
+      }
+      
+      .service-card p{
+      text-align: left;
+
+      }
+     .hero-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-hover);
+    position: relative;
+    z-index: 1;
+}

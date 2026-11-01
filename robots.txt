@@ -1,0 +1,10 @@
+# Fichier robots.txt pour orrysnumeric.cg
+# Indique aux moteurs de recherche ce qu'ils peuvent explorer
+
+User-agent: *
+Disallow: /admin/
+Disallow: /scripts/
+Disallow: /styles/
+Allow: /
+
+Sitemap: https://orrysnumeric.cg/sitemap.xml

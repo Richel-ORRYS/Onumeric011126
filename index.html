@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ORRYS NUMERIC - Cabinet conseil IT à Brazzaville spécialisée dans le développement des applications et des solutions IT : développement web, applications mobiles, Réseaux télécoms, cybersécurité et formations">
+    <meta name="keywords" content="développement web, applications mobiles, cybersécurité, réseaux télécoms, formations IT, conseil informatique, Brazzaville, Congo">
+    <meta name="author" content="ORRYS NUMERIC">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ORRYS NUMERIC - Excéllence Technologique">
+    <meta property="og:description" content="Entreprise spécialisée dans le développement des applications et des solutions IT.">
+    <meta property="og:url" content="https://www.orrysnumeric.cg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ORRYS NUMERIC - Excéllence Technologique">
+    <meta name="twitter:description" content="Cabinet conseil IT spécialisé dans le développement des applications web, mobile, la cybersécurité et formations">
+
+    <title>ORRYS NUMERIC | Excéllence Technologique | Conseil IT, Web & Mobile à Brazzaville</title>
+    <link rel="icon" href="imgs/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/porto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com" defer></script> <!--le cdn pour le loader a point de rebondissement-->
+    <script src="script.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+
+
+
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="text-center">
+            <!-- Zone du logo -->
+            <div id="logoZone">
+                <div id="logoPlaceholder" class="w-24 h-24 mx-auto"><img src="imgs/logob.png" alt="logo" width="150px">
+                </div>
+            </div>
+            <!-- Points rebondissants * avec des classes tailwindcss -->
+            <div class="flex items-center justify-center space-x-2">
+                <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Overlay * qui permet de mettre un background lors du loader de la page* -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu Toggle Button *c'est pour le menu caché à ne pas supprimer car il est affichable pour le responsive design-->
+    <button type="button" class="nav-toggler" id="navToggle" aria-label="Toggle navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+    <!-- Sidebar Navigation * la menu de coté qui est caché-->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-logo"><img src="imgs/logob.png" width="50%" alt="logo"></div>
+
+            <div class="sidebar-service">
+                <a href="index.html" class="actived"><i class="fas fa-home"></i> ACCUEIL</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="navigation/about.html"><i class="fas fa-user"></i> À PROPOS</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="navigation/services.html"><i class="fas fa-gear"></i> SERVICES</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="navigation/formations.html"><i class="fas fa-graduation-cap"></i> FORMATIONS</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="navigation/contacts.html"><i class="fas fa-envelope"></i> CONTACTS</a>
+            </div>
+
+            <p style="margin-top: 2rem; text-align: center; opacity: 0.7;"> ORRYS NUMERIC &copy; 2025</p>
+        </div>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="imgs/logob.png" alt="logo Onumeric" class="logo">
+        <img src="imgs/logo.png" alt="logo Onumeric" class="logo-mobile">
+
+        <div class="header-content">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> OCH, CASE C4-23. BZV</p>
+                <p><i class="fas fa-phone"></i> +242 06-631-83-33</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class="actived">ACCUEIL</a></li>
+            <li><a href="navigation/about.html">À PROPOS</a></li>
+            <li><a href="navigation/services.html">SERVICES</a></li>
+            <li><a href="navigation/formations.html">FORMATIONS</a></li>
+            <li><a href="navigation/contacts.html">CONTACTS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Une imagination au service de la technologie</h1>
+                    <p class="subtitle">IT Consulting & Services</p>
+                    <button class="cta-button">COMMENCER</button>
+
+                    <div class="hero-services">
+                        <div class="hero-service-item">
+                            <h3>Votre Cabinet de Conseil</h3>
+                            <p>Nous vous proposons des services et vous accompagnons avec expertise dans vos processus de digitalisation.</p>
+                        </div>
+
+                        <div class="hero-service-item">
+                            <h3>La solution digitale</h3>
+                            <p>Notre entreprise vous garantit une transformation numérique complète, parfaitement adaptée aux exigences de l'ère digitale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="imgs/hero.jpeg" alt="Excellence technologique ORRYS NUMERIC">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section" id="services">
+            <div class="container">
+                <h2 class="section-title fade-in">NOS SERVICES</h2>
+                <div class="services-grid">
+                    <article class="service-card fade-in">
+                        <i class="fas fa-code"></i>
+                        <h3>Développement Web</h3>
+                        <p><i class="fas fa-check-circle"></i>Conception des sites web modernes (vitrine, e-commerce,
+                            éducatifs), performants et
+                            parfaitement adaptés à tous les supports.</p>
+                        <p><i class="fas fa-check-circle"></i>Implémentation des dernières technologies web pour une
+                            expérience
+                            utilisateur exceptionnelle.</p>
+                    </article>
+
+                    <article class="service-card fade-in">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Applications Mobiles</h3>
+                        <p><i class="fas fa-check-circle"></i>Développement des applications intuitives et performantes
+                            pour iOS et Android de types natifs
+                            et cross-platform optimisées pour une meilleure expérience utilisateur et intégrées aux
+                            dernières technologies mobiles.</p>
+                    </article>
+
+                    <article class="service-card fade-in">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Réseaux & Télécoms</h3>
+                        <p><i class="fas fa-check-circle"></i>Mise
+                            en place des systemes informatiques pour tous.
+                            <br>
+                            <i class="fas fa-check-circle"></i>Installation
+                            des hotspots et bien plus pour la connectivité wiffi.
+                            <br><i class="fas fa-check-circle"></i>Nous
+                            assurons la fiabilité des systèmes réseaux avec des solutions optimisées.
+                        </p>
+                    </article>
+
+                    <article class="service-card fade-in">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersécurité</h3>
+                        <p><i class="fas fa-check-circle"></i>
+                            Protection complète de vos systèmes d'information contre les cybermenaces. <br>
+                            <i class="fas fa-check-circle"></i>Audit de
+                            sécurité, déploiement de solutions de protection avancées et formation de vos équipes pour
+                            garantir une sécurité optimale.
+                        </p>
+                    </article>
+
+                    <article class="service-card fade-in">
+                        <i class="fas fa-wrench"></i>
+                        <h3>Assistance Informatique & Maintenance IT</h3>
+                        <p> <i class="fas fa-check-circle"></i>
+                            Nous accompagnons nos clients au quotidien dans la résolution de problèmes liés à leurs
+                            ordinateurs, à leurs réseau d'entreprise, ainsi qu'à l'ensemble de leurs outils numériques.
+                        </p>
+                    </article>
+
+                    <article class="service-card fade-in">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Video surveillance & Autres</h3>
+                        <p><i class="fas fa-check-circle"></i>
+                            installations des cameras de surveillance pour les particuliers et entreprise. <br><i
+                                class="fas fa-check-circle"></i>Bien d'autres services digitaux pour vous servir...</p>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Formations Section -->
+        <section class="section formations-section" id="formations">
+            <div class="container">
+                <h2 class="section-title fade-in">NOS FORMATIONS</h2>
+                <div class="formations-grid">
+                    <article class="formation-card bas fade-in">
+                        <h3>Technologies Web Modernes</h3>
+                        <img src="imgs/techAvance.jfif"/>
+                        <p style="display: none;">Formation complète aux technologies web de pointe : HTML5, CSS3,
+                            JavaScript ES6+, React, Vue.js, Node.js. Apprenez à créer des applications web performantes
+                            et évolutives avec les meilleures pratiques du développement moderne et les dernières
+                            tendances.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Développement Mobile</h3>
+                        <img src="imgs/appMobile.jpg"/>
+                        <p style="display: none;">Maîtrisez le développement d'applications mobiles avec React Native,
+                            Flutter, ou le développement natif iOS/Android. Formation pratique avec des projets concrets
+                            et une approche hands-on pour créer des apps performantes.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Administration Systèmes & Réseaux</h3>
+                        <img src="imgs/cisco.jpg"/>
+                        <p style="display: none;"> Formation en administration système, configuration réseau, et
+                            sécurité informatique. Devenez un technicien réseaux certifié avec des compétences reconnues
+                            par l'industrie et une expertise technique solide.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Cybersécurité Avancée</h3>
+                        <img src="imgs/cyber.jpeg"/>
+                        <p style="display: none;">Spécialisez-vous dans la sécurité informatique : audit de sécurité,
+                            tests de pénétration, sécurité des réseaux et des applications. Formation certifiante pour
+                            devenir specialiste en cybersécurité avec des compétences recherchées par l'industrie
+                            actuelle.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Initiation à l'informatique</h3>
+                        <img src="imgs/formatique.jpeg" alt="Formation Informatique" />
+                        <p style="display: none;">Plonger dans l'univers de la culture numerique en marquant les
+                            premiers pas avec les ordinateurs et les outils de base de l'informatiques</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Cloud Computing</h3>
+                        <img src="imgs/cloud.webp" alt="Formation CLOUDCOMPT" />
+                        <p style="display: none;">Devenu l'épine dorsale du numerique moderne aujourd'hui le cloud est
+                            bien plus qu'un simple espace de stockage de nos données, un vrai moteur d'innovation, de
+                            flexibilité et de transformation pour les entreprises comme pour les particuliers.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>MasterClass</h3>
+                        <img src="imgs/materClasse.webp" alt="Formation MASTERCLASS" />
+                        <p style="display: none;">Nos masterclass, sont des raccourcis vers l'expérience des meilleurs
+                            qui ont de la place dans leurs métiers, un concentré de savoir, de stratégie et
+                            d'inspiration pour transformer une idée en business solide.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Maintenance Informatique</h3>
+                        <img src="imgs/depanage.webp" alt="Formation MAINTENANCE" />
+                        <p style="display: none;"> Pour la fiabilité et la Sécurité des systèmes apprends à prévenir les
+                            pannes, sécuriser les données, et garantir la continuité des opérations dans un
+                            environnement informatique dominé par des ordinateurs.</p>
+                        <button class="btn-detail">Details</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="inscriptionModal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModal">&times;</span>
+                <h2 id="formationChoisie"></h2>
+
+                <p id="detail"></p>
+
+
+            </div>
+        </div>
+
+        <section class="section apropos" id="apropos">
+            <div class="container">
+                <h2 class="section-title fade-in">A PROPOS</h2>
+                <div class="hero-content">
+                    <div class="hero-text ">
+                        <!-- <h1>Description de l'entreprise</h1> -->
+                        <p class="subtitle">
+                            <b>ORRYS NUMERIC</b> est une entreprise spécialisée dans le developpements des applications et des solutions informatiques. Notament des sites vitrines, des plateformes interactives et des outils métiers.<br>
+                           
+                        </p>
+
+                    </div>
+
+                    <div class="hero-image ">
+                        <!-- <img src="imgs/logo.png" alt="Logo ORRYS NUMERIC" /> -->
+                         <video  width="100%" controls preload="auto" playsinline id="video">
+                            <source src="video/spot.mp4" type="video/mp4">
+                         </video>
+                    </div>
+                </div>
+                <!-- ici c'est mettre un modal qui contiendra un image et une présentation du promoteur  -->
+            </div>
+        </section>
+
+        <!-- Liens utiles Section -->
+        <section class="section formations-section">
+            <div class="container">
+                <h2 class="section-title fade-in">PRESSE & MEDIAS</h2>
+                <div class="formations-grid">
+                    <article class="formation-card bas fade-in">
+                        <h3>Description du promoteur</h3>
+                        <img src="imgs/okoyoas.png"/>
+                        <p style="display: none;">Richel OKO-YOAS, promoteur de ORRYS NUMERIC, est un speciliste dans le domaine des technologies de l'information et de la communication. Avec une expérience en réseaux informatiques, développement web, et applications web, il bâtit sa réputation dans le secteur IT au Congo notamment en formant des jeunes à travers ses iniatives. En tant que leader visionnaire, Richel OKO-YOAS est aussi chef des services informatiques dans l'administration publique congolaise, et contribu à la transformation numérique de diverses entreprises et organisations. Avec ORRYS NUMERIC sa passion pour la technologie et son engagement envers la qualité font de lui un acteur clé dans l'écosystème technologique congolais.</p>
+                        <!-- <a href="https://richel-orrys.github.io/monPortofolio/index.html" target="_blank"><button><i class="fa-solid fa-play"></i></button></a> -->
+                        <button class="btn-detail" style="width: 12.5%; height: 40px; margin-top: 10px;"><i class="fa-solid fa-list"></i></button>
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>interview à la radio nationale</h3>
+                        <img src="imgs/radio1.png"/>
+                        <audio src="video/radio.mpeg" controls preload="auto"></audio>
+                        <p style="display: none;">Dans cette interview exclusive à la Radio Nationale, le promoteur de ORRYS NUMERIC partage sa vision innovante pour l'avenir de la technologie au Congo. 
+                            Découvrez comment il envisage de transformer le paysage numérique local grâce à des solutions technologiques avancées et un engagement envers l'excellence. <br> 
+                            Ne manquez pas cette opportunité d'entendre directement de la part du leader visionnaire derrière ORRYS NUMERIC, alors qu'il discute des défis et des opportunités dans le secteur technologique congolais.</p>
+                        </p>
+                        <button class="btn-detail" style="width: 12.5%; height: 40px; margin-top: 10px;"><i class="fa-solid fa-list"></i></button>
+
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Le promoteur certifé au sitec</h3>
+                        <a href="https://www.facebook.com/photo/?fbid=122281350722066771&set=pcb.122281351346066771" target="_blank"><img src="imgs/sitec.png"/></a>
+                        <p style="display: none;">
+                            Lors du SITEC 2025, Richel OKO-YOAS, promoteur de ORRYS NUMERIC, a captivé l'attention en faisant un témoignage en expliquant les avantages que ce salon a eu pour la création de ORRYS NUMERIC. 
+                            Son intervention a mis en lumière l'importance des formations qu'il a recu lors du sitec 2023 pour stimuler son processus créatif et améliorer sa vision quotidienne. <br>
+                            En tant que leader visionnaire, Richel OKO-YOAS a souligné le rôle crucial du Salon de l'Innovation Technologique et Entrepreneuriale du Congo dans l'écosystème congolais et dans sa transformation comme entrepreneur, inspirant ainsi une nouvelle génération d'entrepreneurs et de professionnels IT.
+                        </p>
+                        <a href="https://www.facebook.com/reel/2190311918159393" target="_blank"><button><i class="fa-solid fa-play"></i></button></a>
+                        <button class="btn-detail" style="width: 12.5%; height: 40px; margin-top: 10px;"><i class="fa-solid fa-list"></i></button>
+
+                    </article>
+
+                    <article class="formation-card bas fade-in">
+                        <h3>Le promoteur certifié à la francophonie</h3>
+                        <img src="imgs/francophonie.jpeg" alt="Formation HTML CSS" />
+                        <p style="display: none;">Richel OKO-YOAS, promoteur de ORRYS NUMERIC, a récemment obtenu une certification prestigieuse de l'Organisation Internationale de la Francophonie (OIF). 
+                            Cette reconnaissance souligne son engagement envers l'excellence et l'innovation dans le domaine des technologies de l'information au sein de la communauté francophone. <br>
+                            La certification de l'OIF atteste des compétences exceptionnelles de Richel OKO-YOAS en matière de développement technologique et de leadership dans le secteur IT. 
+                            En tant que promoteur de ORRYS NUMERIC, il continue d'inspirer et de guider l'entreprise vers de nouveaux sommets, tout en contribuant activement à la promotion de la culture du numerique à travers ses initiatives technologiques.</p>
+                            <button class="btn-detail" style="width: 12.5%; height: 40px; margin-top: 10px;"><i class="fa-solid fa-list"></i></button>
+
+                    </article>
+                    
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Social Media -->
+    <div class="social-media">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" target="_blank" ><i class="fas fa-envelope" title="contact@orrysnumeric.cg"></i></a>
+        <a href="https://www.linkedin.com/in/richel-oko-yoas-b9279319b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/+242069215323" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- A propos section -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <h5>Abonnez-vous pour ne rien rater de nos informations!</h5>
+        <div class="newsletter">
+
+            <form id="newsForm" action="/newsLetter" method="POST">
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder=" Votre e-mail ici"/>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> OK
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <p>Ce site, tous droits réservés, est développé et administré par notre équipe DEV.</p>
+            <p>&copy; 2025 ORRYS NUMERIC | Excellence Technologique</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

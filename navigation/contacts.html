@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacts | ORRYS NUMERIC</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="icon" href="../imgs/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com" defer></script> <!--le cdn pour le loader a point de rebondissement-->
+  <script src="../script.js" defer></script>
+  <script src="../scripts/contacts.js" defer></script>
+</head>
+<body>
+     <!-- Loader -->
+    <div class="loader" id="loader">
+            <div class="text-center">
+                <!-- Zone du logo -->
+                <div id="logoZone">
+                    <div id="logoPlaceholder" class="w-24 h-24 mx-auto"><img src="../imgs/logob.png" alt="" width="150px"></div>
+                </div>
+
+                <!-- Points rebondissants -->
+                <div class="flex items-center justify-center space-x-2" >
+                    <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                    <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                    <div class="w-3 h-3 bg-white rounded-full bounce-dot"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu Toggle Button -->
+    <button type="button" class="nav-toggler" id="navToggle" aria-label="Toggle navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+     <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-logo"><img src="../imgs/logob.png" width="60%" alt=""></div>
+
+            <div class="sidebar-service">
+                 
+                <a href="../index.html" class="actived"><i class="fas fa-home"></i> ACCUEIL</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/about.html"><i class="fas fa-user"></i> À PROPOS</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/services.html"><i class="fas fa-gear"></i> SERVICES</a>
+            </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/formations.html"><i class="fas fa-graduation-cap"></i> FORMATIONS</a>
+             </div>
+
+            <div class="sidebar-service">
+                <a href="../navigation/contacts.html" class="actived"><i class="fas fa-envelope"></i> CONTACTS</a>
+            </div>
+
+            <p style="margin-top: 2rem; text-align: center; opacity: 0.7;">&copy; ORRYS NUMERIC 2025</p>
+        </div>
+    </aside>
+
+  <!-- Header -->
+  <header class="header">
+        <img src="../imgs/logob.png" alt="logo Onumeric" class="logo">
+        <img src="../imgs/logo.png" alt="logo Onumeric" class="logo-mobile">
+
+        <div class="header-content">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> CASE C4-23, OCH. BZV</p>
+                <p><i class="fas fa-phone"></i> +242 06-631-83-33</p>
+            </div>
+        </div>
+    </header>
+
+
+  <!-- Nav -->
+    <nav class="main-nav">
+    <ul>
+      <li><a href="../index.html" >ACCUEIL</a></li>
+            <li><a href="about.html">À PROPOS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="formations.html">FORMATIONS</a></li>
+            <li><a href="contacts.html" class="actived">CONTACTS</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Contact -->
+  <main>
+    <section class="hero" id="contact-section">
+      <div class="hero-content">
+        <div class="hero-text slide-in-left">
+          <h1>Contactez-nous</h1>
+          <p class="subtitle">Un besoin ? Une solution. Un message ? Une réponse.</p>
+          <div class="hero-services">
+            <div class="hero-service-item">
+              <h3>WhatsApp</h3>
+              <p><i class="fab fa-whatsapp"></i> +242 06-921-53-23</p>
+            </div>
+            <div class="hero-service-item">
+              <h3>Email</h3>
+              <p><i class="fas fa-envelope"></i> contact@orrysnumeric.cg</p>
+            </div>
+            <div class="hero-service-item">
+              <h3>Adresse</h3>
+              <p><i class="fas fa-map-marker-alt"></i>Avenue Maréchal Lyautey,OCH, Case C4-23, Moungali 3, Bzv</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image slide-in-right">
+          <img src="../imgs/phonebook.jpg" alt="Contact ORRYS NUMERIC" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Form & Map -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">Écrivez-nous</h2>
+        <div class="contact-container">
+          <form id="contactForm" action="/contacts" method="POST">
+            <div id="successMessage" class="success-message">
+              <i class="fas fa-check-circle"></i> Votre méssage a bien été envoyé !
+            </div>
+
+            <div class="form-group">
+              <label for="nom">Nom & prénom :</label>
+              <input type="text" id="nom" name="name" required placeholder="Tout votre nom" />
+            </div>
+
+            <div class="form-group">
+              <label for="tel">Télephone :</label>
+              <input type="tel" id="tel" name="tel" required placeholder="Le numéro de téléphone ici" />
+            </div>
+
+
+            <div class="form-group">
+              <label for="mail">Adresse email :</label>
+              <input type="email" id="mail" name="email" required placeholder="Votre e-mail ici" />
+            </div>
+
+      
+            <div class="form-group">
+              <label for="message">Méssage :</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Ecrire ici..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Envoyer
+            </button>
+          </form>
+
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7196.622344706426!2d15.265835466363352!3d-4.266306476635508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMTYnMDEuMSJTIDE1wrAxNSc1NS4wIkU!5e0!3m2!1sfr!2scg!4v1751765852275!5m2!1sfr!2scg" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Social media -->
+  <div class="social-media">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/richel-oko-yoas-b9279319b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://wa.me/+242069215323" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+       <p>Ce site, tous droits réservés, est développé et administré par notre équipe DEV.</p>
+        <p>&copy; 2025 ORRYS NUMERIC | Excellence Technologique</p>
+    </div>
+  </footer>
+<!-- animation sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</body>
+</html>
